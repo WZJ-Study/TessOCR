@@ -1,0 +1,26 @@
+# 服务器端口号
+server:
+  port: 8080
+
+# Spring项目配置
+spring:
+  application:
+    name: TessOCR
+  main:
+    allow-bean-definition-overriding: true
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: 123456aA@
+    url: jdbc:postgresql://10.0.1.200:5432/paas_test
+
+# 截屏配置
+snapshot-camera:
+  output-folder-path: D:/output
+  file-name-prefix: SnapShot
+  image-format: jpg
+
+# OCR引擎配置
+tesseract:
+  language: chi_sim
+  datapath: D:/OCR/Tesseract-OCR/tessdata
