@@ -17,6 +17,7 @@
 <!--        <junit.version>5.10.2</junit.version>-->
         <!-- 以下是 OCR引擎 组件版本号 -->
         <tess4j.version>5.13.0</tess4j.version>
+        <rapidocr.version>0.0.7</rapidocr.version>
         <!-- 以下是 postgres数据库 组件版本号 -->
         <postgres.version>42.7.4</postgres.version>
         <!-- 以下是 ORM框架mybatis-plus 组件版本号 -->
@@ -43,21 +44,44 @@
             <version>${tess4j.version}</version>
         </dependency>
 
+        <!--  rapidocr这个必须要引入     -->
+        <!--  可前往maven中央仓库https://central.sonatype.com/artifact/io.github.mymonstercat/rapidocr/versions，查看版本      -->
         <dependency>
-            <groupId>org.openjfx</groupId>
-            <artifactId>javafx-controls</artifactId>
-            <version>17.0.6</version>
+            <groupId>io.github.mymonstercat</groupId>
+            <artifactId>rapidocr</artifactId>
+            <version>${rapidocr.version}</version>
         </dependency>
+
+        <!--  一般只需要引入一个，CPU端建议使用onnx，移动端建议使用ncnn     -->
+        <!--  可前往maven中央仓库https://central.sonatype.com/artifact/io.github.mymonstercat/rapidocr-onnx-platform/versions，查看版本      -->
         <dependency>
-            <groupId>org.openjfx</groupId>
-            <artifactId>javafx-fxml</artifactId>
-            <version>17.0.6</version>
+            <groupId>io.github.mymonstercat</groupId>
+            <artifactId>rapidocr-onnx-platform</artifactId>
+            <version>${rapidocr.version}</version>
         </dependency>
-        <dependency>
-            <groupId>org.kordamp.bootstrapfx</groupId>
-            <artifactId>bootstrapfx-core</artifactId>
-            <version>0.4.0</version>
-        </dependency>
+
+<!--        <dependency>-->
+<!--            <groupId>io.github.mymonstercat</groupId>-->
+<!--            <artifactId>rapidocr-ncnn-platform</artifactId>-->
+<!--            <version>${rapidocr.version}</version>-->
+<!--        </dependency>-->
+
+
+<!--        <dependency>-->
+<!--            <groupId>org.openjfx</groupId>-->
+<!--            <artifactId>javafx-controls</artifactId>-->
+<!--            <version>17.0.6</version>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>org.openjfx</groupId>-->
+<!--            <artifactId>javafx-fxml</artifactId>-->
+<!--            <version>17.0.6</version>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>org.kordamp.bootstrapfx</groupId>-->
+<!--            <artifactId>bootstrapfx-core</artifactId>-->
+<!--            <version>0.4.0</version>-->
+<!--        </dependency>-->
 
 <!--        <dependency>-->
 <!--            <groupId>org.junit.jupiter</groupId>-->
