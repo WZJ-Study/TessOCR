@@ -5,7 +5,6 @@ import cc.wangzijie.demo.config.SnapshotCameraConfig;
 import cc.wangzijie.demo.config.TesseractConfig;
 import cc.wangzijie.demo.ocr.OcrProcessTask;
 import cc.wangzijie.demo.snapshot.SnapshotCamera;
-import cc.wangzijie.demo.snapshot.SnapshotFileQueue;
 import cc.wangzijie.demo.snapshot.SnapshotTask;
 import lombok.extern.slf4j.Slf4j;
 import net.sourceforge.tess4j.Tesseract;
